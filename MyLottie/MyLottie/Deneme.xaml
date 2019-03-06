@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyLottie.Deneme">
+    <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="50" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Image Source="fullLogo.png" HorizontalOptions="CenterAndExpand" Grid.Row="0" Grid.Column="0"></Image>
+        <StackLayout HorizontalOptions="FillAndExpand" 
+                 VerticalOptions="FillAndExpand" 
+                 Orientation="Vertical"
+                 Padding="5, 20, 5, 5"
+                     Grid.Row="1"
+                     Grid.Column="0">
+            <Entry Placeholder="Username" 
+                    HorizontalOptions="CenterAndExpand"></Entry>
+            <Entry Placeholder="Password"
+                    HorizontalOptions="CenterAndExpand"
+                    IsPassword="True"></Entry>
+        </StackLayout>
+        <Button Text="Log In" Grid.Row="2" Grid.Column="0"></Button>
+    </Grid>
+</ContentPage>

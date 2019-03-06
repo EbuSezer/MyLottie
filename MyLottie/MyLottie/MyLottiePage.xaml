@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             x:Class="MyLottie.MyLottiePage">
+        <StackLayout>
+        <forms:AnimationView 
+	            x:Name="animationView" 
+	            Animation="1902-star.json" 
+	            Loop="True" 
+	            AutoPlay="True"
+                WidthRequest="150"
+                HeightRequest="150"/>
+        <forms:AnimationView 
+	            x:Name="animationView1" 
+	            Animation="playstore.json" 
+	            Loop="True" 
+	            AutoPlay="True"
+                WidthRequest="150"
+                HeightRequest="150"/>
+        <forms:AnimationView 
+	            x:Name="animationView2" 
+	            Animation="4414-bouncy-basketball.json" 
+                OnClick="AnimationView2_OnClick"
+                WidthRequest="150"
+                HeightRequest="150"/>
+    </StackLayout>
+</ContentPage>
